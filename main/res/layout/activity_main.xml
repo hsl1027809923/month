@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E62424"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:src="@mipmap/jdg"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="京东"
+            android:textSize="30dp"
+            android:textColor="#FFFDFD"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <EditText
+            android:layout_marginLeft="50dp"
+            android:background="#FFFFFF"
+            android:layout_width="200dp"
+            android:id="@+id/edit_main1"
+            android:hint="请输入"
+            android:textColor="#000000"
+            android:layout_height="50dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:text="搜索"
+            android:textColor="#070707"
+            android:onClick="ssbut"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.bawei.haoshilong.LiusLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lius_layout"
+        android:background="#FFFFFF"
+        android:layout_height="200dp">
+    </com.bawei.haoshilong.LiusLayout>
+    
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recy_view"
+        android:background="#FFFFFF"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
